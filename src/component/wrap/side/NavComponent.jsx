@@ -9,6 +9,11 @@ export default function NavComponent() {
                 <li><a href="!#" class="gnb5" title="리플레이"><span class="blind">리플레이</span></a></li>
                 <li><a href="!#" class="gnb6" title="항적조회"><span class="blind">항적조회</span></a></li>
             </ul>
+
+            <ul class="side">
+                <li><a href="#" class="side1" title="필터"><span class="blind">필터</span></a></li>
+                <li><a href="#" class="side2" title="레이어"><span class="blind">레이어</span></a></li>
+            </ul>
         </nav>
     )
 }

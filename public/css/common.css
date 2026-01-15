@@ -8,10 +8,15 @@
 [data-tab-content][hidden] {display: none;}
 
 /* 폼그룹 */
-.formGroup>ul{width:100%;}
-.formGroup>ul li{display:flex;gap:.8rem;}
-.formGroup>ul li+li{margin-top:.8rem;}
-.formGroup>ul li .col{flex:1;}
+.formGroup > ul{width:100%;}
+.formGroup > ul li{display:flex;gap:.8rem;}
+.formGroup > ul li+li{margin-top:.8rem;}
+.formGroup > ul li .col{flex:1;}
+.formGroup > ul li label {display: flex; align-items: center; flex: 1 1 50%;}
+.formGroup > ul li label span {flex-shrink: 0;width: 7rem; color: var(--white);}
+.formGroup > ul li label select {flex: 1;}
+.formGroup > ul li label input {flex: 1;}
+.formGroup > ul li.fgBtn { justify-content: flex-end; padding: 1.5rem 0 3rem;}
 
 .form_group {display:table; table-layout:fixed; border-collapse:collapse; position:relative; width:100%;}
 .form_group dl{display:table-row-group;}

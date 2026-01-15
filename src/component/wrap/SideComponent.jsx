@@ -1,11 +1,21 @@
+import { useState } from 'react';
 import NavComponent from "./side/NavComponent";
-import PanelComponent from "./side/PanelComponent";
+import Panel1Component from "./side/Panel1Component";
 
 export default function SideComponent() {
+    const [isOpen, setIsOpen] = useState(true);
+
+    const handleToggle = () => {
+        setIsOpen(prev => !prev);
+    };
+
     return(
         <section id="sidePanel">
             <NavComponent />
-            <PanelComponent />
+            <Panel1Component
+                isOpen={isOpen}
+                onToggle={handleToggle}
+            />
         </section>
     )
 }

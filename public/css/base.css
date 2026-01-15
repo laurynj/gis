@@ -3,15 +3,10 @@
 
  /* 변수설정 */
   :root {
-	--100vh: calc(var(--vh, 1vh) * 100);
-	--100vw: calc(var(--vw, 1vw) * 100);
-	--scalew: var(--scalew);
-
-	--main-font: "NanumSquare", sans-serif;
-	
 	--primary1:#02908B;
     --primary1-rgb: 2, 144, 139;
 	--primary2:#04C2C3;
+	--primary3:#01B3B4;
 	--secondary1:#011C2F;
 	--secondary2 :#122D41;
 	--secondary3 :#0A3F4E;
@@ -27,9 +22,6 @@
 	--negative: #FF0000;
     --alert:#FF0000;
 	--dismiss: #666666;
-    --bg1:;
-    --bg2:;
-    --bg3:;
 	/* red */
 	--red-300 :#FF5F6A;
 	--red-400 :#FF2E3C;
@@ -323,7 +315,7 @@ input[type="radio"]:focus-visible + label {
   border-radius: 4px;
 }
 
-.select{
+select{
 	appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;

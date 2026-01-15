@@ -1,6 +1,5 @@
 
 @charset "utf-8";
-$public-path: "/images";
 
 #wrap {
     width: 100%;
@@ -26,7 +25,7 @@ $public-path: "/images";
             display: flex;
             align-items: center;
             justify-content: center;
-            background: url(#{$public-path}/logo.svg) no-repeat center / contain;
+            background: url(../assets/images/logo.svg) no-repeat center / contain;
             }
 
             .logoTxt {
@@ -56,15 +55,15 @@ $public-path: "/images";
                 background-size: 3rem;
 
                 &.alram {
-                    background-image: url(#{$public-path}/ico_alarm.svg);
+                    background-image: url(../assets/images/ico_alarm.svg);
                 }
 
                 &.set {
-                    background-image: url(#{$public-path}/ico_set.svg);
+                    background-image: url(../assets/images/ico_set.svg);
                 }
 
                 &.user {
-                    background-image: url(#{$public-path}/ico_user.svg);
+                    background-image: url(../assets/images/ico_user.svg);
                 }
                 }
             }
@@ -129,62 +128,62 @@ $public-path: "/images";
 
                     /* gnb icons */
                     &.gnb1 {
-                    background-image: url(#{$public-path}/ico_gnb01.svg);
+                    background-image: url(../assets/images/ico_gnb01.svg);
 
                     &:hover,
                     &:active,
                     &.active {
-                        background-image: url(#{$public-path}/ico_gnb01_on.svg);
+                        background-image: url(../assets/images/ico_gnb01_on.svg);
                     }
                     }
 
                     &.gnb2 {
-                    background-image: url(#{$public-path}/ico_gnb02.svg);
+                    background-image: url(../assets/images/ico_gnb02.svg);
 
                     &:hover,
                     &:active,
                     &.active {
-                        background-image: url(#{$public-path}/ico_gnb02_on.svg);
+                        background-image: url(../assets/images/ico_gnb02_on.svg);
                     }
                     }
 
                     &.gnb3 {
-                    background-image: url(#{$public-path}/ico_gnb03.svg);
+                    background-image: url(../assets/images/ico_gnb03.svg);
 
                     &:hover,
                     &:active,
                     &.active {
-                        background-image: url(#{$public-path}/ico_gnb03_on.svg);
+                        background-image: url(../assets/images/ico_gnb03_on.svg);
                     }
                     }
 
                     &.gnb4 {
-                    background-image: url(#{$public-path}/ico_gnb04.svg);
+                    background-image: url(../assets/images/ico_gnb04.svg);
 
                     &:hover,
                     &:active,
                     &.active {
-                        background-image: url(#{$public-path}/ico_gnb04_on.svg);
+                        background-image: url(../assets/images/ico_gnb04_on.svg);
                     }
                     }
 
                     &.gnb5 {
-                    background-image: url(#{$public-path}/ico_gnb05.svg);
+                    background-image: url(../assets/images/ico_gnb05.svg);
 
                     &:hover,
                     &:active,
                     &.active {
-                        background-image: url(#{$public-path}/ico_gnb05_on.svg);
+                        background-image: url(../assets/images/ico_gnb05_on.svg);
                     }
                     }
 
                     &.gnb6 {
-                    background-image: url(#{$public-path}/ico_gnb06.svg);
+                    background-image: url(../assets/images/ico_gnb06.svg);
 
                     &:hover,
                     &:active,
                     &.active {
-                        background-image: url(#{$public-path}/ico_gnb06_on.svg);
+                        background-image: url(../assets/images/ico_gnb06_on.svg);
                     }
                     }
                 }
@@ -278,7 +277,7 @@ $public-path: "/images";
                 width: 2.4rem;
                 height: 2.4rem;
                 transform: translate(-50%, -50%);
-                background: url(#{$public-path}/ico_toggle.svg) no-repeat center / 2.4rem;
+                background: url(../assets/images/ico_toggle.svg) no-repeat center / 2.4rem;
                 transition: transform .3s ease;
                 }
             }
@@ -357,7 +356,7 @@ $public-path: "/images";
                     width: 2rem;
                     height: 2rem;
                     margin-right: .5rem;
-                    background: url(#{$public-path}/ico_globe.svg) no-repeat center / 2rem;
+                    background: url(../assets/images/ico_globe.svg) no-repeat center / 2rem;
                 }
                 }
 
@@ -396,18 +395,18 @@ $public-path: "/images";
             }
 
             &.map {
-                background-image: url(#{$public-path}/ico_map.svg);
+                background-image: url(../assets/images/ico_map.svg);
             }
 
             &.ship {
-                background-image: url(#{$public-path}/ico_ship.svg);
+                background-image: url(../assets/images/ico_ship.svg);
             }
 
             &.set {
                 width: 2rem;
                 height: 2rem;
                 background-color: transparent;
-                background-image: url(#{$public-path}/ico_set_s.svg);
+                background-image: url(../assets/images/ico_set_s.svg);
                 background-size: 2rem;
 
                 &:hover,
@@ -449,7 +448,7 @@ $public-path: "/images";
             text-indent: -999999em;
             border: none;
             cursor: pointer;
-            background: url(#{$public-path}/ico_search_main.svg) no-repeat center left / 2.4rem;
+            background: url(../assets/images/ico_search_main.svg) no-repeat center left / 2.4rem;
             }
         }
     }
@@ -537,19 +536,19 @@ $public-path: "/images";
                 height: 3rem;
                 }
 
-                &.tool01 { background-image: url(#{$public-path}/ico_tool01.svg); }
-                &.tool02 { background-image: url(#{$public-path}/ico_tool02.svg); }
-                &.tool03 { background-image: url(#{$public-path}/ico_tool03.svg); }
-                &.tool04 { background-image: url(#{$public-path}/ico_tool04.svg); }
-                &.tool05 { background-image: url(#{$public-path}/ico_tool05.svg); }
-                &.tool06 { background-image: url(#{$public-path}/ico_tool06.svg); }
-                &.tool07 { background-image: url(#{$public-path}/ico_tool07.svg); }
-                &.tool08 { background-image: url(#{$public-path}/ico_tool08.svg); }
+                &.tool01 { background-image: url(../assets/images/ico_tool01.svg); }
+                &.tool02 { background-image: url(../assets/images/ico_tool02.svg); }
+                &.tool03 { background-image: url(../assets/images/ico_tool03.svg); }
+                &.tool04 { background-image: url(../assets/images/ico_tool04.svg); }
+                &.tool05 { background-image: url(../assets/images/ico_tool05.svg); }
+                &.tool06 { background-image: url(../assets/images/ico_tool06.svg); }
+                &.tool07 { background-image: url(../assets/images/ico_tool07.svg); }
+                &.tool08 { background-image: url(../assets/images/ico_tool08.svg); }
 
-                &.zoomin   { background-image: url(#{$public-path}/ico_plus.svg); }
-                &.zoomout  { background-image: url(#{$public-path}/ico_minus.svg); }
-                &.legend   { background-image: url(#{$public-path}/ico_legend.svg); }
-                &.minimap  { background-image: url(#{$public-path}/ico_minimap.svg); }
+                &.zoomin   { background-image: url(../assets/images/ico_plus.svg); }
+                &.zoomout  { background-image: url(../assets/images/ico_minus.svg); }
+                &.legend   { background-image: url(../assets/images/ico_legend.svg); }
+                &.minimap  { background-image: url(../assets/images/ico_minimap.svg); }
             }
             }
         }
