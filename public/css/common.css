@@ -1,5 +1,4 @@
 
-
 /* 탭버튼 */
 .tabDefault{display:flex;width:100%;}
 .tabDefault button{flex:1;box-sizing:border-box;font-size:var(--fs-ml);color:#9B9EA8;height:4.8rem;font-weight:var(--fw-bold);background-color:var(--secondary1);border:1px solid var(--secondary3);}
@@ -9,14 +8,19 @@
 
 /* 폼그룹 */
 .formGroup > ul{width:100%;}
-.formGroup > ul li{display:flex;gap:.8rem;}
+.formGroup > ul > li{display:flex;gap:.8rem;}
 .formGroup > ul li+li{margin-top:.8rem;}
 .formGroup > ul li .col{flex:1;}
 .formGroup > ul li label {display: flex; align-items: center; flex: 1 1 50%;}
-.formGroup > ul li label span {flex-shrink: 0;width: 7rem; color: var(--white);}
-.formGroup > ul li label select {flex: 1;}
-.formGroup > ul li label input {flex: 1;}
+.formGroup > ul li label > span {flex-shrink: 0;width: 7rem; color: var(--white);}
+.formGroup > ul li label > select {flex: 1;}
+.formGroup > ul li label > input {flex: 1;}
+.formGroup > ul li label .labelRow {flex: 1; display: flex; align-items: center; gap: .5rem; color: var(--white);}
+.formGroup > ul li label .labelRow > span{flex-shrink: 0;}
+.formGroup > ul li label .labelRow > input {flex: 1;}
 .formGroup > ul li.fgBtn { justify-content: flex-end; padding: 1.5rem 0 3rem;}
+/* 폼그룹 label width변경 */
+.formGroup > ul.lagelW12 li label > span {flex-shrink: 0;width: 12rem; color: var(--white);}
 
 .form_group {display:table; table-layout:fixed; border-collapse:collapse; position:relative; width:100%;}
 .form_group dl{display:table-row-group;}
@@ -38,10 +42,15 @@
 .schbox ul li button {margin-left: 1rem;}
 
 .boxGroup {display: flex; width: 100%;}
-.boxGroup .{}
 
 /* hidden 접근성 관련 */
 .blind{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+
+/* input */
+.schInput{height: 3.5rem; font-family: 'NanumSquare', sans-serif;font-size: var(--fs-m); color: var(--white);background-color: var(--tertiary1);padding: 0 1.2rem; border: 0;}
+.schInput::placeholder { color:rgba(var(--white-rgb),.3); }
+.dateInput {}
+.dateInput::placeholder { color:var(--white); }
 
 /* 버튼 */
 .btn {min-width: 14rem; height: 4.2rem;display:flex;align-items:center; justify-content:center;font-size: var(--fs-ml);font-weight: var(--fw-bold); }

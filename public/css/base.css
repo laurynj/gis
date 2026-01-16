@@ -240,6 +240,21 @@ textarea:focus {
 	border: 1px solid var(--cobalt-blue);
 }
 
+select{
+	appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background:var(--secondary2) url('../images/ico_select.svg')no-repeat right 1.2rem center / 1.2rem;
+	border: 1px solid var(--secondary4);
+	width: 100%; 
+	height: 4rem; 
+	font-family: 'NanumSquare', sans-serif;
+	font-size: var(--fs-m); 
+	color: var(--white);
+	padding: 1rem 1.2rem;
+	text-overflow: ellipsis;white-space: nowrap; max-width: 100%; overflow: hidden;
+}
+
 input, input:disabled{
 	-webkit-appearance: none;
 	appearance: none;
@@ -251,16 +266,13 @@ input{
 	-webkit-appearance: none;  
 	-moz-appearance: none;     
 	width: 100%; 
-	height: 3.5rem; 
+	height: 4rem; 
 	font-family: 'NanumSquare', sans-serif;
+	background-color: var(--secondary2);
+	border: 1px solid var(--secondary4);
 	font-size: var(--fs-m); 
 	color: var(--white);
-	background-color: var(--tertiary1);
 	padding: 0 1.2rem; 
-	border: 0;
-}
-input:focus {
-	outline: none; 
 }
 input::placeholder { color:rgba(var(--white-rgb),.3); }
 /* Chrome, Safari, Opera, Microsoft Edge */
@@ -313,19 +325,4 @@ input[type="radio"]:focus-visible + label {
   outline: 2px solid orange;
   outline-offset: 4px;
   border-radius: 4px;
-}
-
-select{
-	appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background:var(--secondary2) url('../images/ico_select.svg')no-repeat right 1.2rem center / 1.2rem;
-	border: 1px solid var(--secondary4);
-	width: 100%; 
-	height: 4rem; 
-	font-family: 'NanumSquare', sans-serif;
-	font-size: var(--fs-m); 
-	color: var(--white);
-	padding: 1rem 1.2rem;
-	text-overflow: ellipsis;white-space: nowrap; max-width: 100%; overflow: hidden;
 }

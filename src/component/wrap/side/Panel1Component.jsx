@@ -65,7 +65,7 @@ export default function Panel1Component({ isOpen, onToggle }) {
             <div className="schbox mtb24">
                 <ul>
                 <li>
-                    <input type="text" placeholder="대표검도" />
+                    <input type="text" className="schInput" placeholder="대표검도" />
                 </li>
                 <li>
                     <button type="button" className="schBtn">검색</button>
@@ -117,9 +117,7 @@ export default function Panel1Component({ isOpen, onToggle }) {
                         <li>
                             <label>
                                 <span>타겟 ID</span>
-                                <select>
-                                    <option>전체</option>
-                                </select>
+                                <input type="text" placeholder="타겟 ID" />
                             </label>
                         </li>
                         <li>
@@ -128,7 +126,7 @@ export default function Panel1Component({ isOpen, onToggle }) {
                                 <input type="text" placeholder="선박명" />
                             </label>
                         </li>
-                        <li class="fgBtn">
+                        <li className="fgBtn">
                             <button type="button" className="schBtn">검색</button>
                         </li>
                     </ul>
@@ -145,7 +143,9 @@ export default function Panel1Component({ isOpen, onToggle }) {
                         <li>
                             <label>
                                 <span>제재 유형</span>
-                                <input type="text" placeholder="타겟 ID" />
+                                <select>
+                                    <option>전체</option>
+                                </select>
                             </label>
                         </li>
                         <li>
@@ -154,7 +154,7 @@ export default function Panel1Component({ isOpen, onToggle }) {
                                 <input type="text" placeholder="선박명" />
                             </label>
                         </li>
-                        <li class="fgBtn">
+                        <li className="fgBtn">
                             <button type="button" className="schBtn">검색</button>
                         </li>
                     </ul>
@@ -209,7 +209,10 @@ export default function Panel1Component({ isOpen, onToggle }) {
                         <li>
                             <label>
                                 <span>사고기간</span>
-                                <input type="text" placeholder="사고기간" />
+                                <div className='labelRow'>
+                                <input type="text" className="dateInput" placeholder="연도-월-일" />
+                                 <span>-</span>
+                                 <input type="text"className="dateInput" placeholder="연도-월-일" /></div>
                             </label>
                         </li>
                         <li>
@@ -218,7 +221,7 @@ export default function Panel1Component({ isOpen, onToggle }) {
                                 <input type="text" placeholder="사고내용" />
                             </label>
                         </li>
-                        <li class="fgBtn">
+                        <li className="fgBtn">
                             <button type="button" className="schBtn">검색</button>
                         </li>
                     </ul>
@@ -267,11 +270,11 @@ export default function Panel1Component({ isOpen, onToggle }) {
                         <li>
                             <label>
                                 <span>출항일시</span>
-                                <input type="text" placeholder="연도-월-일 - -:-" />
+                                <input type="text" className="dateInput" placeholder="연도-월-일 - -:-" />
                             </label>
                             <label>
                                 <span>~ 입항일시</span>
-                                <input type="text" placeholder="연도-월-일 - -:-" />
+                                <input type="text" className="dateInput" placeholder="연도-월-일 - -:-" />
                             </label>
                         </li>
                         <li>
@@ -312,7 +315,7 @@ export default function Panel1Component({ isOpen, onToggle }) {
                                 <input type="text" placeholder="선박명" />
                             </label>
                         </li>
-                        <li class="fgBtn">
+                        <li className="fgBtn">
                             <button type="button" className="schBtn">검색</button>
                         </li>
                     </ul>
@@ -356,6 +359,66 @@ export default function Panel1Component({ isOpen, onToggle }) {
         <div className={`tabWrap ${activeTab === 'ship06' ? 'is-active' : ''}`}>
             <div className="tabTop">
                 <div className="title">관심선박</div>
+                <div className="formGroup">
+                    <ul className="lagelW12">
+                        <li>
+                            <label>
+                                <span>관심사유 지정사유</span>
+                                <select>
+                                    <option>전체</option>
+                                </select>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <span>타겟 ID</span>
+                                <input type="text" placeholder="타겟 ID" />
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <span>선박명</span>
+                                <input type="text" placeholder="선박명" />
+                            </label>
+                        </li>
+                        <li className="fgBtn">
+                            <button type="button" className="schBtn">검색</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="tabBtm">
+            <ul className="shipList">
+                <li>
+                <a href="#!" className="active">
+                    <i className="cicle default"></i>
+                    <span>0001</span>
+                    <span>1511함A-05</span>
+                    <span>
+                    <img src="/images/flag_kor.svg" alt="대한민국" className="flagIcon" />
+                    </span>
+                    <span>(AIS)</span>
+                    <span className="legend">
+                    <img src="/images/legend_ship_pink.svg" alt="선박" className="legendShip" />
+                    </span>
+                </a>
+                </li>
+                <li>
+                <a href="#!" className="">
+                    <i className="cicle default"></i>
+                    <span>0001</span>
+                    <span>1511함A-05</span>
+                    <span>
+                    <img src="/images/flag_kor.svg" alt="대한민국" className="flagIcon" />
+                    </span>
+                    <span>(AIS)</span>
+                    <span className="legend">
+                    <img src="/images/legend_ship_pink.svg" alt="선박" className="legendShip" />
+                    </span>
+                </a>
+                </li>
+            </ul>
             </div>
         </div>
         {/* 사이드패널 토글버튼 */}
